@@ -63,8 +63,7 @@ def create_layers(info_dict):
             order=1,
         )
 
-        hexagon_data = add_hexa_value(hexagon_data, info_dict)
-        print(hexagon_data)
+        #hexagon_data = add_hexa_value(hexagon_data, info_dict)
         
         hexagon_layer = pdk.Layer(
             'HexagonLayer', 
@@ -81,7 +80,7 @@ def create_layers(info_dict):
             order=3,
             zIndex=1000,  
             get_fill_color=[255, 0, 0] ,
-            get_elevation='val',
+            #get_elevation='val',
             coverage=1) 
         return geolayer, hexagon_layer
     else:
