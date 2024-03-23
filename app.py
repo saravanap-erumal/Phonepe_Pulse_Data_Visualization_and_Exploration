@@ -263,8 +263,11 @@ class Website():
             
             if options == "Home":
                 self.home()
-            elif options == "Pulse":    
-                self.pulse()
+            elif options == "Pulse":
+                try:
+                    self.pulse()
+                 execpt Execption as e:
+                    pass
             elif options == "Basic insights":
                 self.basic_insights()
             elif options == "Search":
