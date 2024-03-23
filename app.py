@@ -264,10 +264,7 @@ class Website():
             if options == "Home":
                 self.home()
             elif options == "Pulse": 
-                try:   
-                    self.pulse()
-                except Exception as e:
-                    pass
+                self.pulse()
             elif options == "Basic insights":
                 self.basic_insights()
             elif options == "Search":
