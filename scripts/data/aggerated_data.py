@@ -29,7 +29,7 @@ def tranction_data(path):
     agg_data = open(path)
     st.write(path)
     f = open(path)
-    st.write(f)
+    st.write(f.read())
     agg_data = json.load(agg_data)
     agg_data = agg_data['data']["transactionData"]
     rows = []
