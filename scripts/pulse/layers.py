@@ -86,7 +86,7 @@ def create_layers(info_dict):
     else:
         updated_map = update_map(info_dict)
         updated_hexa_data = update_hexa_data(state)
-        hexagon_data = add_hexa_value(updated_hexa_data, info_dict)
+        #hexagon_data = add_hexa_value(updated_hexa_data, info_dict)
         geolayer = pdk.Layer(
             'GeoJsonLayer',
             data=updated_map,
@@ -118,7 +118,7 @@ def create_layers(info_dict):
             order=3,
             zIndex=1000,  
             get_fill_color=[255, 0, 0] ,
-            get_elevation='val',
+            #get_elevation='val',
             coverage=1)
         
         info_dict["state"] = "All-India"
