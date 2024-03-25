@@ -86,7 +86,7 @@ def create_layers(info_dict):
     else:
         updated_map = update_map(info_dict)
         updated_hexa_data = update_hexa_data(state)
-        #hexagon_data = add_hexa_value(updated_hexa_data, info_dict)
+        hexagon_data = updated_hexa_data
         geolayer = pdk.Layer(
             'GeoJsonLayer',
             data=updated_map,
