@@ -1,7 +1,6 @@
 import json
 import re
 import pandas as pd
-import streamlit as st
 
 
 def aggregated_data(data):
@@ -27,8 +26,6 @@ def aggregated_data(data):
 
 def tranction_data(path):
     agg_data = open(path)
-    agg_data_lines = agg_data.readlines()
-    st.write(agg_data_lines)
     agg_data = json.load(agg_data)
     agg_data = agg_data['data']["transactionData"]
     rows = []
