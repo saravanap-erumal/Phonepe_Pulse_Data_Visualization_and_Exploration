@@ -27,7 +27,8 @@ def aggregated_data(data):
 
 def tranction_data(path):
     agg_data = open(path)
-    st.write(agg_data)
+    agg_data_lines = agg_data.readlines()
+    st.write(agg_data_lines)
     agg_data = json.load(agg_data)
     agg_data = agg_data['data']["transactionData"]
     rows = []
